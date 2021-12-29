@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Overview</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background: linear-gradient(to right, rgb(45, 121, 45), green);
+      }
+      a{
+        text-decoration: none;
+        color: white;
+        font-size: 1rem;
+      }
+      .container {
+        display: flex;
+        min-height: 100vh;
+        justify-content: center;
+        align-items: center;
+      }
+      .product-overview {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+      .product {
+        display: flex;
+        background-color: rgba(169, 169, 169, 0.63);
+        
+        transform: skewX(-30deg);
+        transition: 0.2s;
+      }
+      .p {
+        padding: 1rem 2rem;
+       
+        transform: skewX(-0deg);
+        border-right: 2px solid blueviolet;
+      }
+      .p > span{
+        display: inline-block;
+        transform: skewX(30deg);
+      }
+      .p > a{
+        display: inline-block;
+        transform: skewX(30deg);
+      }
+      .detail{
+        border: none;
+      }
+      .icon {
+        background-color: white;
+        font-size: 2rem;
+
+        
+      }
+      .name {
+        background: linear-gradient(to bottom, rgb(0, 82, 0),rgb(83, 146, 83) );
+        color: white;
+        font-size: 1.5rem;
+        
+      }
+      .nutrient {
+        font-size: 1rem;
+        display: none;
+      }
+      .quantity {
+        font-size: 1rem;
+        background: white;
+        color: black;
+      }
+      .price {
+        background: white;
+        color: black;
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
+      .product:hover {
+        transform:skewX(-30deg) scale(1.2, 1.2);
+        /* transform: rotate(-5deg); */
+      }
+    </style>
+  </head>
+  <body>
+    <section class="container">
+      <div class="product-overview">
+        <div class="product">
+          <div class="p icon"><span>🍎</span></div>
+          <div class="p name"><span>Apple</span></div>
+          <div class="p nutrient"><span></span></div>
+          <div class="p quantity"><span>1kg</span></div>
+          <div class="p price"><span>2$/Kg</span></div>
+          <div class="p detail"><a href="">Detail</a></div>
+        </div>
+        <div class="product">
+          <div class="p icon"><span>🍊</span></div>
+          <div class="p name"><span>Orange</span></div>
+          <div class="p nutrient"><span></span></div>
+          <div class="p quantity"><span>1kg</span></div>
+          <div class="p price"><span>1$/Kg</span></div>
+          <div class="p detail"><a href="">Detail</a></div>
+        </div>
+        <div class="product">
+          <div class="p icon"><span>🍓</span></div>
+          <div class="p name"><span>Litchi</span></div>
+          <div class="p nutrient"><span></span></div>
+          <div class="p quantity"><span>1kg</span></div>
+          <div class="p price"><span>1.5$/Kg</span></div>
+          <div class="p detail"><a href="">Detail</a></div>
+        </div>
+        <div class="product">
+          <div class="p icon"><span>🥭</span></div>
+          <div class="p name"><span>Mango</span></div>
+          <div class="p nutrient"><span></span></div>
+          <div class="p quantity"><span>1kg</span></div>
+          <div class="p price"><span>0.5$/Kg</span></div>
+          <div class="p detail"><a href="">Detail</a></div>
+        </div>
+        <div class="product">
+          <div class="p icon"><span>🍐</span></div>
+          <div class="p name"><span>Avocado</span></div>
+          <div class="p nutrient"><span></span></div>
+          <div class="p quantity"><span>1kg</span></div>
+          <div class="p price"><span>1$/Kg</span></div>
+          <div class="p detail"><a href="">Detail</a></div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
